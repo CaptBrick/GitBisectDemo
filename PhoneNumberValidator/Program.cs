@@ -15,6 +15,9 @@ namespace PhoneNumberValidator
             while (true)
             {
                 var validator = new Validator();
+
+                Console.WriteLine();
+                Console.WriteLine("------------------");
                 Console.WriteLine("Enter phone number:");
                 var input = Console.ReadLine();
                 Console.WriteLine();
