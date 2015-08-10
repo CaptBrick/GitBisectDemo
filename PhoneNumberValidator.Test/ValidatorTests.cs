@@ -33,5 +33,12 @@ namespace PhoneNumberValidator.Test
             var isValid = _validator.IsNumberValid("+123-456");
             Assert.IsTrue(isValid);
         }
+
+        [TestMethod]
+        public void TestInvalidPhoneNumberWithLetters()
+        {
+            var isValid = _validator.IsNumberValid("26b");
+            Assert.IsFalse(isValid);
+        }
     }
 }
