@@ -4,10 +4,11 @@ namespace PhoneNumberValidator
 {
     internal class Program
     {
-        private static void Main(string[] args)
+        private static int Main(string[] args)
         {
             var program = new Program();
             program.Run();
+            return 0;
         }
 
         public void Run()
