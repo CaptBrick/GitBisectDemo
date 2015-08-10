@@ -4,9 +4,14 @@
     {
         public bool IsNumberValid(string phoneNumber)
         {
-            foreach (var c in phoneNumber)
+            for (int i = 0; i < phoneNumber.Length; i++)
             {
-                if (!char.IsDigit(c) && c != '-' && c != '+')
+                var c = phoneNumber[i];
+                if (i == 0 && c == '+')
+                {
+                    continue;
+                }
+                if (!char.IsDigit(c) && c != '-')
                 {
                     return false;
                 }
