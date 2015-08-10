@@ -6,10 +6,11 @@
         {
             foreach (var c in phoneNumber)
             {
-                if (IsValidPhoneNumberCharacter(c))
+                if (!IsValidPhoneNumberCharacter(c))
                 {
-                    return false;
+                    continue;
                 }
+                return false;
             }
             return true;
         }
