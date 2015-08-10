@@ -22,15 +22,16 @@ namespace PhoneNumberValidator
                 var input = Console.ReadLine();
                 Console.WriteLine();
                 Console.Write("{0} is ", input);
+                var validString = string.Empty;
                 if (validator.IsNumberValid(input))
                 {
-                    Console.Write("valid ");
+                    validString = "valid";
                 }
                 else
                 {
-                    Console.Write("invalid ");
+                    validString = "invalid";
                 }
-                Console.WriteLine(" phone number");
+                Console.WriteLine("{0} phone number", validString);
             }
         }
     }
