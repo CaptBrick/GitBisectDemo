@@ -22,7 +22,7 @@ namespace PhoneNumberValidator
                 var input = Console.ReadLine();
                 Console.WriteLine();
                 Console.Write("{0} is ", input);
-                var validString = string.Empty;
+                string validString;
                 if (validator.IsNumberValid(input))
                 {
                     validString = "valid";
