@@ -21,7 +21,6 @@ namespace PhoneNumberValidator
                 Console.WriteLine("Enter phone number:");
                 var input = Console.ReadLine();
                 Console.WriteLine();
-                Console.Write("{0} is ", input);
                 string validString;
                 if (validator.IsNumberValid(input))
                 {
@@ -31,7 +30,7 @@ namespace PhoneNumberValidator
                 {
                     validString = "invalid";
                 }
-                Console.WriteLine("{0} phone number", validString);
+                Console.Write("{0} is {1} phone number", input, validString);
             }
         }
     }
