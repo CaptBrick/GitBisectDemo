@@ -26,5 +26,12 @@ namespace PhoneNumberValidator.Test
             var isValid = _validator.IsNumberValid("123-456");
             Assert.IsTrue(isValid);
         }
+
+        [TestMethod]
+        public void TestNumberWithLeadingPlus()
+        {
+            var isValid = _validator.IsNumberValid("+123-456");
+            Assert.IsTrue(isValid);
+        }
     }
 }
