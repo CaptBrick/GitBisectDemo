@@ -19,5 +19,12 @@ namespace PhoneNumberValidator.Test
             var isValid = _validator.IsNumberValid("123456");
             Assert.IsTrue(isValid);
         }
+
+        [TestMethod]
+        public void TestNumberWithHyphens()
+        {
+            var isValid = _validator.IsNumberValid("123-456");
+            Assert.IsTrue(isValid);
+        }
     }
 }

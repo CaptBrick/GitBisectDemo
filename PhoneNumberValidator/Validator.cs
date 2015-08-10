@@ -6,7 +6,7 @@
         {
             foreach (var c in phoneNumber)
             {
-                if (!char.IsDigit(c))
+                if (!char.IsDigit(c) && c != '-')
                 {
                     return false;
                 }
