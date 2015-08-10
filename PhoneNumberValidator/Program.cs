@@ -24,12 +24,13 @@ namespace PhoneNumberValidator
                 Console.Write("{0} is ", input);
                 if (validator.IsNumberValid(input))
                 {
-                    Console.WriteLine("valid phone number");
+                    Console.Write("valid ");
                 }
                 else
                 {
-                    Console.WriteLine("invalid phone number");
+                    Console.Write("invalid ");
                 }
+                Console.WriteLine(" phone number");
             }
         }
     }
