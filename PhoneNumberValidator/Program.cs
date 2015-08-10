@@ -6,8 +6,17 @@ namespace PhoneNumberValidator
     {
         private static int Main(string[] args)
         {
-            var program = new Program();
-            program.Run();
+            try
+            {
+                var program = new Program();
+                program.Run();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error: {0}", e.Message);
+                return 2;
+            }
+
             return 0;
         }
 
