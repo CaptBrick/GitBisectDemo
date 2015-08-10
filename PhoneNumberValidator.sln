@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberValidator", "PhoneNumberValidator\PhoneNumberValidator.csproj", "{58093E84-8009-40DD-A3BE-C8AA59DC0E8F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneNumberValidator.Test", "PhoneNumberValidator.Test\PhoneNumberValidator.Test.csproj", "{9C7EDD2A-E979-4AE3-98DF-F54162D1C816}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{58093E84-8009-40DD-A3BE-C8AA59DC0E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{58093E84-8009-40DD-A3BE-C8AA59DC0E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{58093E84-8009-40DD-A3BE-C8AA59DC0E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C7EDD2A-E979-4AE3-98DF-F54162D1C816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C7EDD2A-E979-4AE3-98DF-F54162D1C816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C7EDD2A-E979-4AE3-98DF-F54162D1C816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C7EDD2A-E979-4AE3-98DF-F54162D1C816}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
