@@ -38,7 +38,7 @@ namespace PhoneNumberValidator
                 }
                 else
                 {
-                    validString = "invalid";
+                    validString = "INVALID";
                 }
                 Console.Write("{0} is {1} phone number", input, validString);
             }
