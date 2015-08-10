@@ -4,15 +4,19 @@
     {
         public bool IsNumberValid(string phoneNumber)
         {
-            for (int i = 0; i < phoneNumber.Length; i++)
+            foreach (var c in phoneNumber)
             {
-                var c = phoneNumber[i];
-                if (!char.IsDigit(c) && c != '-' && c != '+')
+                if (IsValidPhoneNumberCharacter(c))
                 {
                     return false;
                 }
             }
             return true;
+        }
+
+        private static bool IsValidPhoneNumberCharacter(char c)
+        {
+            return !char.IsDigit(c) && c != '-' && c != '+';
         }
     }
 }
